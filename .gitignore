@@ -1,0 +1,30 @@
+# Variables de entorno (contienen información sensible)
+.env.local
+.env.production
+.env.development
+
+# Archivos de logs
+*.log
+logs/
+
+# Dependencias
+node_modules/
+
+# Archivos temporales
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Archivos de sistema
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

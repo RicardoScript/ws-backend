@@ -1,0 +1,24 @@
+import { obtenerPensionAlimenticia } from '../Scrapers/pensionAlimenticia.mjs'
+
+export const consultarPensionAlimenticia = async (req, res) => {
+  try {
+    const { cedula } = req.body
+    
+    console.log(`🔍 Iniciando consulta de pensiones alimenticias para cédula: ${cedula}`)
+    
+    const resultado = await obtenerPensionAlimenticia(cedula)
+    
+    res.json({
+      success: true,
+      data: resultado,
+      message: 'Consulta de pensiones alimenticias completada'
+    })
+    
+  } catch (error) {
+    console.error('❌ Error en consultarPensionAlimenticia:', error)
+    res.status(500).json({
+      success: false,
+      message: 'Ocurrió un error al hacer scraping'
+    })
+  }
+}

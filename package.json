@@ -1,0 +1,36 @@
+{
+  "name": "web-scraping",
+  "version": "1.0.0",
+  "description": "Web scrapping de paginas como la senecyt, SUPA, Sercop, etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:Frontend\"",
+    "dev:backend": "cd Backend && npm run dev",
+    "dev:frontend": "cd Frontend && npm run dev",
+    "install:all": "npm install && cd Backend && npm install && cd ../Frontend && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lCristianl/Web-Scrapping.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lCristianl/Web-Scrapping/issues"
+  },
+  "homepage": "https://github.com/lCristianl/Web-Scrapping#readme",
+  "dependencies": {
+    "mongodb": "^6.17.0",
+    "node-fetch": "^3.3.2",
+    "pdf-parse": "^1.1.1",
+    "playwright": "^1.53.2",
+    "sharp": "^0.34.3",
+    "tesseract.js": "^6.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
