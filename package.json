@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/lCristianl/Web-Scrapping#readme",
   "dependencies": {
-    "mongodb": "^6.17.0",
+    "mongodb": "^6.20.0",
     "node-fetch": "^3.3.2",
     "pdf-parse": "^1.1.1",
     "playwright": "^1.53.2",
